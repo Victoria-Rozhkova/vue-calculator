@@ -1,24 +1,24 @@
-# vue-calculator
+# Vue-calculator
 
-## Project setup
+Приложение калькулятора реализовано с помощью [vue cli v.2](https://cli.vuejs.org/), оно может посчитать **сумму**, **разность**, **произведение**, **деление** двух чисел, а также **возвести в степень**, посчитать **проценты**, выполнить **целочисленное деление**.
+
+### Реализована возможность: 
+* отобразить или скрыть экранную клавиатуру, 
+* переключать операнды, 
+* удалить последний символ, 
+* сбросить значения.
+
+При наведении на операции, высвечивается подсказка - название операции.
+
+![preview](https://github.com/Victoria-Rozhkova/vue-calculator/blob/preview/preview.JPG)
+
+## Первый запуск
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
