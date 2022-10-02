@@ -11,12 +11,14 @@
         type="number"
         v-model.number="operand_1"
         placeholder="Введите число"
+        name="operand_1"
       />
       <input
         class="display__input"
         type="number"
         v-model.number="operand_2"
         placeholder="Введите число"
+        name="operand_2"
       />
       <span>= {{ result }}</span>
     </div>
