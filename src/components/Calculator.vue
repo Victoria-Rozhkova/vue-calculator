@@ -4,7 +4,7 @@
       <h1>Vue-calculator</h1>
       <img alt="Vue logo" src="../assets/logo.png" />
     </div>
-    <button @click="reset" class="reset">Сброс</button>
+    <button @click="reset" class="reset" name="reset">Сброс</button>
     <div class="display">
       <input
         class="display__input"
@@ -28,6 +28,7 @@
           class="controls__btn"
           v-for="(operand, id, index) in operands"
           :key="index"
+          :name="operand"
           @click="calculate(operand)"
           :title="id"
           :disabled="
@@ -40,7 +41,11 @@
         </button>
       </div>
       <div class="controls__block">
-        <button @click="floor" class="controls__btn">
+        <button
+          @click="floor"
+          class="controls__btn"
+          name="Целочисленное деление"
+        >
           Целочисленное деление
         </button>
       </div>
@@ -58,6 +63,7 @@
             class="key"
             v-for="(key, index) in keyboard"
             :key="index"
+            :name="key"
             @click="changeValue(key)"
           >
             {{ key }}
